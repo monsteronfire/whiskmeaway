@@ -1,0 +1,14 @@
+/* Importing config scss files */
+@import "config/colors";
+@import "config/mixins";
+@import "config/variables";
+@import "config/functions";
+
+/* Importing site scss files */
+@import "site/normalize";
+@import "site/structure";
+@import "site/buttons";
+@import "site/icons";
+@import "site/plugins";
+@import "site/typography";
+@import "site/fonts";

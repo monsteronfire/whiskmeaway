@@ -1,0 +1,179 @@
+body {
+	background-color: grey;
+}
+
+.row {
+	max-width: rem-calc(995);
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main-content {
+	padding-right: rem-calc(7);
+	padding-left: rem-calc(7);
+}
+
+.product-holder {
+	width: 100%;
+	max-width: rem-calc(972);
+	height: rem-calc(440);
+	/*overflow-y: hidden;*/
+}
+
+.product-holder .inner-conveyer-belt {
+	overflow: auto;
+}
+
+.product-holder.drinks .inner-conveyer-belt,
+.product-holder.traditional-christmas-breads .inner-conveyer-belt,
+.product-holder.party-packs .inner-conveyer-belt {
+	width: rem-calc(744);
+}
+
+.product-holder.whole-cakes .inner-conveyer-belt {
+	width: rem-calc(1736);
+}
+
+.product-holder.gifts .inner-conveyer-belt {
+	width: rem-calc(2232);
+}
+
+.product-holder.machine .inner-conveyer-belt {
+	width: rem-calc(496);
+}
+
+
+
+.product-holder article {
+	position: relative;
+	float: left;
+	padding-top: rem-calc(6);
+	padding-bottom: rem-calc(5);
+}
+
+.product-item {
+	position: relative;
+	width: rem-calc(240);
+	height: rem-calc(420);
+	border-radius: rem-calc(3);
+	overflow: hidden;
+	text-align: center;
+	margin-right: rem-calc(4);
+	margin-left: rem-calc(4);
+
+	img {
+		position: absolute;
+		top: rem-calc(0);
+		left: rem-calc(0);
+		z-index: 1;
+	}
+
+	.description {
+		position: absolute;
+		bottom: rem-calc(0);
+		z-index: 2;
+		width: 100%;
+		height: rem-calc(135);
+		background-color: $white;
+		transition: all .3s ease .1s;
+		border-radius: rem-calc(0) rem-calc(0) rem-calc(3) rem-calc(3);
+	}
+
+	.description .top-triangle {
+		position: absolute;
+		top: rem-calc(-60);
+		z-index: -1;
+		border-style: solid;
+		/* border-width: top right bottom left  */
+		border-width: rem-calc(0) rem-calc(0) rem-calc(60) rem-calc(260);
+		border-color: transparent transparent $white transparent;
+		transition: all .3s ease .1s;
+		-ms-transform: rotate(0deg);
+	    -webkit-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+
+	.description .btn-view-more {
+		opacity: 0;
+		transition: all .6s ease;
+	}
+}
+
+.product-item > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.product-item:hover {
+	.description {
+		height: rem-calc(195);
+	}
+
+	.description .top-triangle {
+		top: rem-calc(0);
+		-ms-transform: rotate(13deg);
+	    -webkit-transform: rotate(13deg);
+	    transform: rotate(13deg);
+	}
+
+	.description .btn-view-more {
+		-webkit-transition: all .35s ease-out 1s;
+		-moz-transition: all .35s ease-out 1s;
+		-o-transition: all .35s ease-out 1s;
+		-ms-transition: all .35s ease-out 1s;
+		transition: all .35s ease-out 1s;
+		webkit-transition-delay: .225s;
+		-moz-transition-delay: .225s;
+		-o-transition-delay: .225s;
+		-ms-transition-delay: .225s;
+		transition-delay: .225s;
+		opacity: 1;
+	}
+}
+
+.ribbon-wrapper-in-store {
+	width: rem-calc(145);
+	height: rem-calc(127);
+	overflow: hidden;
+	position: absolute;
+	top: rem-calc(3);
+	left: rem-calc(104);
+}
+
+.ribbon-in-store {
+	color: $white;
+	text-align: center;
+	-webkit-transform: rotate(45deg);
+	-moz-transform:    rotate(45deg);
+	-ms-transform:     rotate(45deg);
+	-o-transform:      rotate(45deg);
+	position: relative;
+	padding: rem-calc(10) rem-calc(0);
+	left: rem-calc(5);
+	top: rem-calc(27);
+	width: rem-calc(181);
+	z-index: 2;
+	background-color: $mediumred;
+	-webkit-box-shadow: rem-calc(0) rem-calc(0) rem-calc(3) rgba(0,0,0,0.3);
+	-moz-box-shadow:    rem-calc(0) rem-calc(0) rem-calc(3) rgba(0,0,0,0.3);
+	box-shadow:         rem-calc(0) rem-calc(0) rem-calc(3) rgba(0,0,0,0.3);
+
+	&:before,
+	&:after {
+		content: "";
+		border-top:   rem-calc(3) solid $maroon;
+		border-left:  rem-calc(3) solid transparent;
+		border-right: rem-calc(3) solid transparent;
+		position:absolute;
+		bottom: rem-calc(-3);
+	}
+
+	&:before {
+		left: 0;
+	}
+
+	&:after {
+		right: 0;
+	}
+}

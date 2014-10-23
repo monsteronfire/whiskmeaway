@@ -1,0 +1,14 @@
+{
+  "name": "cbtl-christmas2014",
+  "version": "0.0.1",
+  "description": "Christmas microsite for the Coffee Bean and Tea Leaf, 2014",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
