@@ -13,11 +13,19 @@ body {
 	padding-left: rem-calc(7);
 }
 
+.disclaimer {
+	width: 95%;
+	margin: 0 auto;
+	padding: 10px 15px;
+	background-color: $orange;
+	border-radius: rem-calc(3);
+}
+
 .product-holder {
 	width: 100%;
 	max-width: rem-calc(972);
-	height: rem-calc(440);
-	/*overflow-y: hidden;*/
+	height: rem-calc(450);
+	overflow-y: hidden;
 }
 
 .product-holder .inner-conveyer-belt {
@@ -27,7 +35,7 @@ body {
 .product-holder.drinks .inner-conveyer-belt,
 .product-holder.traditional-christmas-breads .inner-conveyer-belt,
 .product-holder.party-packs .inner-conveyer-belt {
-	width: rem-calc(744);
+	width: rem-calc(745);
 }
 
 .product-holder.whole-cakes .inner-conveyer-belt {
@@ -41,8 +49,6 @@ body {
 .product-holder.machine .inner-conveyer-belt {
 	width: rem-calc(496);
 }
-
-
 
 .product-holder article {
 	position: relative;

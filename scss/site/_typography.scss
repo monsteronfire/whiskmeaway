@@ -1,10 +1,42 @@
+h1 {
+	color: $mediumred;
+	font-family: 'roboto_slabbold';
+	font-size: rem-calc(24);
+	text-align: center;
+}
+
+h2 {
+	color: $orange;
+	font-family: 'roboto_slabbold';
+	font-size: rem-calc(20);
+}
+
 h3 {
 	color: $mediumred;
 	font-family: 'roboto_slabbold';
 	font-size: rem-calc(23);
 }
 
+h4 {
+	color: $mediumgrey;
+	font-family: 'os_regular';
+	font-size: rem-calc(12);
+	text-align: center;
+}
+
 .ribbon-in-store {
 	font-family: 'os_regular';
 	text-transform: uppercase;
+}
+
+.disclaimer p {
+	color: $lightergrey;
+	font-size: rem-calc(12);
+	line-height: rem-calc(18);
+}
+
+.section-intro {
+	color: $mediumgrey;
+	font-family: 'os_regular';
+	font-size: rem-calc(14);
 }

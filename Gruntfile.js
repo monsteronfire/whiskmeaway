@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: [
-          'slick.js/slick/slick.min.js',
+          'js/slick.js/slick/slick.min.js',
           'js/init.js'
         ],
 
