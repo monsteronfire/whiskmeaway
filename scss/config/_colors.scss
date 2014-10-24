@@ -9,3 +9,19 @@ $orange: #E99212;
 $lightergrey: #F9F9F9;
 $lightgrey: #DBDBDB;
 $mediumgrey: #464646;
+
+$bggrey: #E5E5E5;
+
+$offwhite: #F0F0F0;
+
+/* needs latest Compass, add '@import "compass"' to your scss*/
+.grey-gradient {
+	background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 4%, #ffffff 4%, #dbdbdb 57%, #dbdbdb 57%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(4%,#ffffff), color-stop(4%,#ffffff), color-stop(57%,#dbdbdb), color-stop(57%,#dbdbdb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 4%,#ffffff 4%,#dbdbdb 57%,#dbdbdb 57%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 4%,#ffffff 4%,#dbdbdb 57%,#dbdbdb 57%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 4%,#ffffff 4%,#dbdbdb 57%,#dbdbdb 57%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 4%,#ffffff 4%,#dbdbdb 57%,#dbdbdb 57%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+}

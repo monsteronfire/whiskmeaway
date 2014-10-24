@@ -28,4 +28,13 @@ jQuery(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 2000,
 	});
+
+	//Menu Button
+	var btnmenu = $('#btn-menu');
+	var menulist = $('#menu-list');
+
+	btnmenu.click(function(){
+		// menulist.toggleClass('hidden');
+		menulist.slideToggle();
+	});
 });

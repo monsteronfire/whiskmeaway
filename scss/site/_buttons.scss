@@ -6,3 +6,25 @@
 	color: $white;
 	text-transform: uppercase;
 }
+
+.btn-menu {
+	position: relative;
+	z-index: 3;
+	float: right;
+	padding: rem-calc(5) rem-calc(20) rem-calc(5) rem-calc(10);
+	background-color: $orange;
+	border: none;
+	border-radius: rem-calc(0) rem-calc(0) rem-calc(2) rem-calc(2);
+	font-family: 'os_bold';
+	font-size: rem-calc(12);
+	text-transform: uppercase;
+}
+
+.btn-menu:after {
+	position: absolute;
+	top: rem-calc(8);
+	left: rem-calc(50);
+	content: "\f078";
+	font-family: 'fontawesome';
+	font-size: rem-calc(10);
+}
