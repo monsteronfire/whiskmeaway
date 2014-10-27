@@ -46,6 +46,10 @@ h6 {
 	color: $lightergrey;
 	font-size: rem-calc(12);
 	line-height: rem-calc(18);
+
+	@include desktop {
+		font-size: rem-calc(16);
+	}
 }
 
 .disclaimer h6 {
@@ -80,6 +84,10 @@ h6 {
 	@include tablet {
 		text-align: center;
 	}
+
+	@include desktop {
+		text-align: center;
+	}
 }
 
 .copyright-box p {
@@ -89,6 +97,11 @@ h6 {
 
 	@include tablet {
 		font-size: rem-calc(10);
+		text-align: center;
+	}
+
+	@include desktop {
+		font-size: rem-calc(11);
 		text-align: center;
 	}
 }

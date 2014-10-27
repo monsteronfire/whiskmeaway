@@ -7,7 +7,7 @@ body {
 .row,
 .row-no-padding {
 	position: relative;
-	max-width: rem-calc(995);
+	max-width: rem-calc(990);
 	width: 100%;
 	margin: 0 auto;
 	padding-right: rem-calc(7);
@@ -99,6 +99,10 @@ header {
 	@include tablet {
 		width: auto;
 	}
+
+	@include desktop {
+		width: auto;
+	}
 }
 
 .site-subheading {
@@ -126,6 +130,11 @@ header {
 		width: 50%;
 		margin: 0 auto;
 	}
+
+	@include desktop {
+		width: 33%;
+		margin: 0 auto;
+	}
 }
 
 .site-intro {
@@ -134,9 +143,18 @@ header {
 	margin-right: auto;
 	margin-bottom: rem-calc(0);
 	margin-left: auto;
+
+	@include desktop {
+		width: 52%;
+	}
 }
 
 /* Main Content */
+.site-wrapper {
+	min-width: 320px;
+	overflow-x: hidden
+}
+
 .main-content {
 	overflow: hidden;
 }
@@ -156,10 +174,23 @@ header {
 		margin-top: rem-calc(10);
 		margin-left: rem-calc(60);
 	}
+
+	@include desktop {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: rem-calc(10);
+	}
 }
 
 .section-intro {
 	@include tablet {
+		display: inline-block;
+		padding-left: rem-calc(20);
+		border-left: rem-calc(1) solid $mediumgrey;
+		font-size: rem-calc(13);
+	}
+
+	@include desktop {
 		display: inline-block;
 		padding-left: rem-calc(20);
 		border-left: rem-calc(1) solid $mediumgrey;
@@ -172,6 +203,10 @@ header {
 	@include tablet {
 		width: 12%;
 	}
+
+	@include desktop {
+		width: 12%;
+	}
 }
 
 .drinks .section-intro,
@@ -179,10 +214,18 @@ header {
 	@include tablet {
 		width: 70%;
 	}
+
+	@include desktop {
+		width: 70%;
+	}
 }
 
 .whole-cakes h2 {
 	@include tablet {
+		width: 18%;
+	}
+
+	@include desktop {
 		width: 20%;
 	}
 }
@@ -191,11 +234,19 @@ header {
 	@include tablet {
 		width: 70%;
 	}
+
+	@include desktop {
+		width: 60%;
+	}
 }
 
 .traditional-christmas-breads h2,
 .traditional-christmas-breads .section-intro {
 	@include tablet {
+		width: 43%;
+	}
+
+	@include desktop {
 		width: 43%;
 	}
 }
@@ -204,10 +255,18 @@ header {
 	@include tablet {
 		width: 20%;
 	}
+
+	@include desktop {
+		width: 20%;
+	}
 }
 
 .party-packs .section-intro {
 	@include tablet {
+		width: 70%;
+	}
+
+	@include desktop {
 		width: 70%;
 	}
 }
@@ -216,16 +275,31 @@ header {
 	@include tablet {
 		width: 23%;
 	}
+
+	@include desktop {
+		width: 23%;
+	}
 }
 
 .machine .section-intro {
 	@include tablet {
 		width: 60%;
 	}
+
+	@include desktop {
+		width: 60%;
+	}
 }
 
 .cards .section-intro {
 	@include tablet {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		border-left: none;
+	}
+
+	@include desktop {
 		display: block;
 		width: 80%;
 		margin: 0 auto;
@@ -250,11 +324,20 @@ header {
 	@include tablet {
 		text-align: center;
 	}
+
+	@include desktop {
+		padding: rem-calc(10) rem-calc(130);
+		text-align: center;
+	}
 }
 
 .disclaimer-bottom {
 	@include tablet {
 		width: 90%;
+		margin-top: rem-calc(40);
+	}
+
+	@include desktop {
 		margin-top: rem-calc(40);
 	}
 }
@@ -264,6 +347,10 @@ header {
 	max-width: rem-calc(972);
 	height: rem-calc(450);
 	overflow-y: hidden;
+
+	@include desktop {
+		overflow-x: hidden;
+	}
 }
 
 .product-holder .inner-conveyer-belt {
@@ -274,20 +361,51 @@ header {
 .product-holder.traditional-christmas-breads .inner-conveyer-belt,
 .product-holder.party-packs .inner-conveyer-belt {
 	width: rem-calc(745);
+
+	@include desktop {
+		margin: 0 auto;
+	}
+}
+
+.product-holder.whole-cakes {
+	@include desktop {
+		max-width: rem-calc(990);
+		height: rem-calc(860);
+	}
 }
 
 .product-holder.whole-cakes .inner-conveyer-belt {
 	width: rem-calc(1736);
+
+	@include desktop {
+		width: rem-calc(990);
+	}
+}
+
+.product-holder.gifts {
+	@include desktop {
+		max-width: rem-calc(750);
+		height: rem-calc(1295);
+		margin: 0 auto;
+	}
 }
 
 .product-holder.gifts .inner-conveyer-belt {
 	width: rem-calc(2232);
+
+	@include desktop {
+		width: rem-calc(990);
+	}
 }
 
 .product-holder.machine .inner-conveyer-belt {
 	width: rem-calc(496);
 
 	@include tablet {
+		margin: 0 auto;
+	}
+
+	@include desktop {
 		margin: 0 auto;
 	}
 }
@@ -422,6 +540,20 @@ header {
 	}
 }
 
+.product-holder.whole-cakes .product-item {
+	@include desktop {
+		margin-right: rem-calc(2);
+		margin-left: rem-calc(2);
+	}
+}
+.item-centraliser {
+	@include desktop {
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+
 .bg-gradient {
 	padding-top: rem-calc(10);
 	@extend .grey-gradient;
@@ -487,7 +619,24 @@ header {
 
 	li {
 		display: inline-block;
+		width: 43%;
 		list-style: none;
+
+		@include tablet {
+			width: auto;
+		}
+
+		@include desktop {
+			width: rem-calc(243);
+		}
+	}
+
+	li img {
+		width: 100%;
+
+		@include tablet {
+			width: auto;
+		}
 	}
 }
 

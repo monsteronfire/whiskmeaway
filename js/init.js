@@ -10,6 +10,7 @@ jQuery(document).ready(function(){
 		adaptiveHeight: true,
 		autoplay: true,
 		autoplaySpeed: 2000,
+		fade: true
 	});
 
 	//Menu Button
