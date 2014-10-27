@@ -1,7 +1,7 @@
 
 
 jQuery(document).ready(function(){
-	$('.mobile-slider').slick({
+	$('.site-slider').slick({
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,

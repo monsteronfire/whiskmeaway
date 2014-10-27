@@ -23,6 +23,42 @@ body {
 	display: none;
 }
 
+.show-small-only {
+	display: block;
+
+	@include tablet {
+		display: none;
+	}
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.show-medium-only {
+	display: none;
+
+	@include tablet {
+		display: block;
+	}
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.show-large-only {
+	display: none;
+
+	@include tablet {
+		display: none;
+	}
+
+	@include desktop {
+		display: block;
+	}
+}
+
 /* NAVIGATIONS */
 
 header {
@@ -314,6 +350,17 @@ header {
 
 	&:after {
 		right: 0;
+	}
+}
+
+/* Cards */
+.cbtl-card-box {
+	padding: rem-calc(0);
+	text-align: center;
+
+	li {
+		display: inline-block;
+		list-style: none;
 	}
 }
 
