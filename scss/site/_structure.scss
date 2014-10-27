@@ -141,28 +141,95 @@ header {
 	overflow: hidden;
 }
 
+.main-content section {
+	padding-top: rem-calc(80);
+}
+
+.main-content .bg-gradient section {
+	padding-top: rem-calc(40);
+}
+
 .main-content h2 {
 	@include tablet {
 		display: inline-block;
-		border-right: rem-calc(1) solid $mediumgrey;
+		vertical-align: top;
+		margin-top: rem-calc(10);
+		margin-left: rem-calc(60);
 	}
 }
 
 .section-intro {
 	@include tablet {
 		display: inline-block;
+		padding-left: rem-calc(20);
+		border-left: rem-calc(1) solid $mediumgrey;
+		font-size: rem-calc(13);
 	}
 }
 
-.drinks h2 {
+.drinks h2,
+.gifts h2 {
 	@include tablet {
 		width: 12%;
 	}
 }
 
-.drinks .section-intro {
+.drinks .section-intro,
+.gifts .section-intro {
 	@include tablet {
 		width: 70%;
+	}
+}
+
+.whole-cakes h2 {
+	@include tablet {
+		width: 20%;
+	}
+}
+
+.whole-cakes .section-intro {
+	@include tablet {
+		width: 70%;
+	}
+}
+
+.traditional-christmas-breads h2,
+.traditional-christmas-breads .section-intro {
+	@include tablet {
+		width: 43%;
+	}
+}
+
+.party-packs h2 {
+	@include tablet {
+		width: 20%;
+	}
+}
+
+.party-packs .section-intro {
+	@include tablet {
+		width: 70%;
+	}
+}
+
+.machine h2 {
+	@include tablet {
+		width: 23%;
+	}
+}
+
+.machine .section-intro {
+	@include tablet {
+		width: 60%;
+	}
+}
+
+.cards .section-intro {
+	@include tablet {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		border-left: none;
 	}
 }
 
@@ -176,7 +243,19 @@ header {
 	@include tablet {
 		width: 80%;
 		padding: rem-calc(10) rem-calc(45);
+	}
+}
+
+.disclaimer-top {
+	@include tablet {
 		text-align: center;
+	}
+}
+
+.disclaimer-bottom {
+	@include tablet {
+		width: 90%;
+		margin-top: rem-calc(40);
 	}
 }
 
@@ -207,6 +286,10 @@ header {
 
 .product-holder.machine .inner-conveyer-belt {
 	width: rem-calc(496);
+
+	@include tablet {
+		margin: 0 auto;
+	}
 }
 
 .product-holder article {

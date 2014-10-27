@@ -76,8 +76,19 @@ h6 {
 	text-transform: uppercase;
 }
 
+.cards h5 {
+	@include tablet {
+		text-align: center;
+	}
+}
+
 .copyright-box p {
 	color: $copyrightgrey;
 	font-family: 'roboto_slabregular';
 	font-size: rem-calc(8);
+
+	@include tablet {
+		font-size: rem-calc(10);
+		text-align: center;
+	}
 }
