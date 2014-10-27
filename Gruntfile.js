@@ -44,6 +44,7 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'js/slick.js/slick/slick.min.js',
+          'js/jquery-snowfall/dist/snowfall.jquery.min.js',
           'js/init.js'
         ],
 

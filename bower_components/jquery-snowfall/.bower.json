@@ -1,0 +1,36 @@
+{
+  "name": "JQuery-Snowfall",
+  "version": "1.7.1",
+  "homepage": "https://github.com/loktar00/JQuery-Snowfall",
+  "authors": [
+    "Jason Brown <loktar69@hotmail.com>"
+  ],
+  "description": "Make it snow on your page or elements",
+  "main": "index.html",
+  "keywords": [
+    "snow",
+    "snowfall",
+    "snowing"
+  ],
+  "license": "Apache",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "_release": "1.7.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.7.1",
+    "commit": "ee63a912a6f77e01b88f16420fd1fd66f0f6fde3"
+  },
+  "_source": "git://github.com/loktar00/JQuery-Snowfall.git",
+  "_target": "~1.7.1",
+  "_originalSource": "jquery-snowfall",
+  "_direct": true
+}

@@ -21,4 +21,13 @@ jQuery(document).ready(function(){
 		// menulist.toggleClass('hidden');
 		menulist.slideToggle();
 	});
+
+	//Snowfall
+	$(document).snowfall();
+	$("#collection").click(function(){
+        $(document).snowfall('clear');
+        document.body.className  = "lightBg";
+        $('.collectonme').show();
+        $(document).snowfall({collection : '.collectonme', flakeCount : 250});
+    });
 });
