@@ -18,6 +18,23 @@
         <script src="js/vendor/modernizr.min.js"></script>
     </head>
     <body>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1524289384495201',
+              xfbml      : true,
+              version    : 'v2.1'
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
         <!--[if IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -25,19 +42,21 @@
         <!-- SITE CONTENT - START -->
         <div class="site-wrapper">
             <header role="banner">
-                <nav class="main-nav" role="">
-                    <button id="btn-menu" class="btn-menu">Menu</button>
-                    <ul id="menu-list" class="menu-list hidden">
-                        <li><a href="#" target="_blank">coffee</a></li>
-                        <li><a href="#" target="_blank">tea</a></li>
-                        <li><a href="#" target="_blank">cakes-to-go</a></li>
-                        <li><a href="#" target="_blank">party packs</a></li>
-                        <li><a href="#" target="_blank">my coffee bean</a></li>
-                        <li><a href="#" target="_blank">promotions</a></li>
-                        <li><a href="#" target="_blank">happenings</a></li>
-                        <li><a href="#" target="_blank">caring cup</a></li>
-                    </ul>
-                </nav>
+                <div class="row">
+                    <nav class="main-nav" role="">
+                        <button id="btn-menu" class="btn-menu">Menu</button>
+                        <ul id="menu-list" class="menu-list hidden">
+                            <li><a href="#" target="_blank">coffee</a></li>
+                            <li><a href="#" target="_blank">tea</a></li>
+                            <li><a href="#" target="_blank">cakes-to-go</a></li>
+                            <li><a href="#" target="_blank">party packs</a></li>
+                            <li><a href="#" target="_blank">my coffee bean</a></li>
+                            <li><a href="#" target="_blank">promotions</a></li>
+                            <li><a href="#" target="_blank">happenings</a></li>
+                            <li><a href="#" target="_blank">caring cup</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="site-carousel">
                     <div class="mobile-slider">
                         <div><img src="assets/img/global/banner-img-mobile-1.png" alt=""></div>
@@ -47,8 +66,8 @@
                 </div>
                 <div class="row">
                     <div>
-                        <h1>Christmas at The Coffee Bean &amp; Tea Leaf</h1>
-                        <div class="subheading">
+                        <h1 class="site-title">Christmas at The Coffee Bean &amp; Tea Leaf</h1>
+                        <div class="site-subheading">
                             <h4>The Celebration Begins Here</h4>
                         </div>
                         <div class="site-intro">
@@ -496,10 +515,34 @@
                         </div><!-- end product-holder -->
                     </section><!--section - machine-->
                 </div><!-- end row -->
+
+                <div class="row">
+                    <section>
+                        <h5>It’s Christmas on a Card</h5>
+                        <p class="section-intro">
+                            Add this limited edition TCB Holiday Card to your collection and enjoy the Early Bird Promo in-store!
+                            <br /><br />
+                            Get 20% off Christmas whole cakes, traditional Christmas breads, party packs and selected gifts from 3 November - 14 December 2014. It's the perfect gift for your favorite coffee or tea lover!
+                        </p>
+                        <div class="disclaimer">
+                            <h6>Get a FREE limited edition 2015 The Coffee Bean &amp; Tea Leaf Calendar</h6>
+                            <p>
+                                Just top up or purchase a TCB card today to receive a free limited edition 2015 calendar. Walk into one of our stores today and find out more from our friendly baristas. Terms and condition apply.
+                            </p>
+                        </div>
+                    </section>
+                </div>
             </div><!-- end main-content -->
 
             <footer role="contentinfo">
-                footer
+                <div class="row">
+                    <section class="like-share-box">
+                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    </section>
+                </div>
+                <section class="copyright-box">
+                    <p>&copy; 2014 International Coffee &amp; Tea, LLC. The Coffee Bean &amp; Tea Leaf and CBTL and their logos are registered trademarks of International Coffee &amp; Tea, LLC</p>
+                </section>
             </footer>
         </div><!-- end site-wrapper -->
         <!-- SITE CONTENT - END -->

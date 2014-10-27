@@ -24,6 +24,19 @@ h4 {
 	text-align: center;
 }
 
+h5 {
+	color: $mediumred;
+	font-family: 'roboto_slabbold';
+	font-size: rem-calc(20);
+}
+
+h6 {
+	color: $white;
+	font-family: 'os_bold';
+	font-size: rem-calc(15);
+	letter-spacing: rem-calc(-1);
+}
+
 .ribbon-in-store {
 	font-family: 'os_regular';
 	text-transform: uppercase;
@@ -35,8 +48,36 @@ h4 {
 	line-height: rem-calc(18);
 }
 
+.disclaimer h6 {
+	margin-top: rem-calc(0);
+	margin-bottom: rem-calc(0);
+}
+
 .section-intro {
 	color: $mediumgrey;
 	font-family: 'os_regular';
 	font-size: rem-calc(14);
+}
+
+.site-intro p {
+	color: $mediumgrey;
+	font-family: 'os_regular';
+	font-size: rem-calc(14);
+	text-align: center;
+}
+
+.main-nav ul li a {
+	display: block;
+	padding: rem-calc(10) rem-calc(15);
+	color: $mediumgrey;
+	font-family: 'os_semibold';
+	font-size: rem-calc(13);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.copyright-box p {
+	color: $copyrightgrey;
+	font-family: 'roboto_slabregular';
+	font-size: rem-calc(8);
 }

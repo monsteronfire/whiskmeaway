@@ -4,10 +4,19 @@ body {
 	background-color: $bggrey;
 }
 
-.row {
+.row,
+.row-no-padding {
+	position: relative;
 	max-width: rem-calc(995);
 	width: 100%;
 	margin: 0 auto;
+	padding-right: rem-calc(7);
+	padding-left: rem-calc(7);
+}
+
+.row-no-padding {
+	padding-right: rem-calc(0);
+	padding-left: rem-calc(0);
 }
 
 .hidden {
@@ -46,25 +55,49 @@ header {
 	border-bottom: rem-calc(1) solid $lightgrey;
 }
 
-.main-nav ul li a {
-	display: block;
-	padding: rem-calc(10) rem-calc(15);
-	color: $mediumgrey;
-	font-family: 'os_semibold';
-	font-size: rem-calc(13);
-	text-decoration: none;
-	text-transform: uppercase;
+.site-title {
+	width: rem-calc(205);
+	margin: 0 auto;
+	line-height: rem-calc(30);
 }
 
+.site-subheading {
+	position: relative;
 
+	&:before,
+	&:after {
+		content: ' ';
+		position: absolute;
+		top: rem-calc(10);
+		height: rem-calc(2);
+		width: rem-calc(45);
+		background-color: $darkorange;
+	}
 
+	&:before {
+		left: rem-calc(5);
+	}
+
+	&:after {
+		right: rem-calc(5);
+	}
+}
+
+.site-intro {
+	width: 90%;
+	margin-top: rem-calc(25);
+	margin-right: auto;
+	margin-bottom: rem-calc(0);
+	margin-left: auto;
+}
+
+/* Main Content */
 .main-content {
-	padding-right: rem-calc(7);
-	padding-left: rem-calc(7);
+	overflow: hidden;
 }
 
 .disclaimer {
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 10px 15px;
 	background-color: $orange;
@@ -229,6 +262,13 @@ header {
 .bg-gradient {
 	padding-top: rem-calc(10);
 	@extend .grey-gradient;
+
+	hr {
+		border-color: $white;
+		border-style: solid;
+		border-width: rem-calc(1);
+		margin-top: rem-calc(20);
+	}
 }
 
 .ribbon-wrapper-in-store {
@@ -275,4 +315,11 @@ header {
 	&:after {
 		right: 0;
 	}
+}
+
+/* Footer */
+.copyright-box {
+	padding-right: rem-calc(7);
+	padding-bottom: rem-calc(15);
+	padding-left: rem-calc(7);
 }
