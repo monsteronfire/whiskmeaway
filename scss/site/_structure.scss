@@ -95,6 +95,10 @@ header {
 	width: rem-calc(205);
 	margin: 0 auto;
 	line-height: rem-calc(30);
+
+	@include tablet {
+		width: auto;
+	}
 }
 
 .site-subheading {
@@ -117,6 +121,11 @@ header {
 	&:after {
 		right: rem-calc(5);
 	}
+
+	@include tablet {
+		width: 50%;
+		margin: 0 auto;
+	}
 }
 
 .site-intro {
@@ -132,12 +141,43 @@ header {
 	overflow: hidden;
 }
 
+.main-content h2 {
+	@include tablet {
+		display: inline-block;
+		border-right: rem-calc(1) solid $mediumgrey;
+	}
+}
+
+.section-intro {
+	@include tablet {
+		display: inline-block;
+	}
+}
+
+.drinks h2 {
+	@include tablet {
+		width: 12%;
+	}
+}
+
+.drinks .section-intro {
+	@include tablet {
+		width: 70%;
+	}
+}
+
 .disclaimer {
 	width: 100%;
 	margin: 0 auto;
-	padding: 10px 15px;
+	padding: rem-calc(10) rem-calc(15);
 	background-color: $orange;
 	border-radius: rem-calc(3);
+
+	@include tablet {
+		width: 80%;
+		padding: rem-calc(10) rem-calc(45);
+		text-align: center;
+	}
 }
 
 .product-holder {
@@ -208,6 +248,10 @@ header {
 		background-color: $white;
 		transition: all .3s ease .1s;
 		border-radius: rem-calc(0) rem-calc(0) rem-calc(3) rem-calc(3);
+
+		h3 {
+			height: rem-calc(76);
+		}
 
 		@include desktop {
 			position: absolute;
