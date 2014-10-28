@@ -40,11 +40,14 @@ jQuery(document).ready(function(){
 	});
 
 	//Snowfall
-	$(document).snowfall();
-	$("#collection").click(function(){
-        $(document).snowfall('clear');
-        document.body.className  = "lightBg";
-        $('.collectonme').show();
-        $(document).snowfall({collection : '.collectonme', flakeCount : 250});
-    });
+        $(document).snowfall({
+        	collection : '.collectonme',
+        	deviceorientation : true,
+        	round : true,
+        	flakeCount : 40,
+        	minSize: 5,
+        	maxSize: 15
+        });
+
+ 
 });
