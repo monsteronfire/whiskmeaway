@@ -49,5 +49,4 @@ jQuery(document).ready(function(){
         	maxSize: 10
         });
 
- 
 });
