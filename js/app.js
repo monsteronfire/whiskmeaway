@@ -23,10 +23,10 @@ jQuery(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
-		speed: 300,
+		speed: 1200,
 		adaptiveHeight: true,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 3000,
 		fade: true
 	});
 
@@ -44,9 +44,9 @@ jQuery(document).ready(function(){
         	collection : '.collectonme',
         	deviceorientation : true,
         	round : true,
-        	flakeCount : 40,
-        	minSize: 5,
-        	maxSize: 15
+        	flakeCount : 20,
+        	minSize: 2,
+        	maxSize: 10
         });
 
  

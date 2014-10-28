@@ -240,7 +240,16 @@ header {
 	}
 }
 
-.traditional-christmas-breads h2,
+.traditional-christmas-breads h2 {
+	@include tablet {
+		width: 43%;
+	}
+
+	@include desktop {
+		width: 33%;
+	}
+}
+
 .traditional-christmas-breads .section-intro {
 	@include tablet {
 		width: 43%;
@@ -257,7 +266,7 @@ header {
 	}
 
 	@include desktop {
-		width: 20%;
+		width: 15%;
 	}
 }
 
@@ -277,7 +286,7 @@ header {
 	}
 
 	@include desktop {
-		width: 23%;
+		width: 20%;
 	}
 }
 
@@ -446,6 +455,8 @@ header {
 		z-index: 2;
 		width: 100%;
 		height: rem-calc(195);
+		padding-right: rem-calc(10);
+		padding-left: rem-calc(10);
 		background-color: $white;
 		transition: all .3s ease .1s;
 		border-radius: rem-calc(0) rem-calc(0) rem-calc(3) rem-calc(3);
@@ -468,6 +479,7 @@ header {
 
 	.description .top-triangle {
 		top: rem-calc(0);
+		left: rem-calc(0);
 		-ms-transform: rotate(13deg);
 	    -webkit-transform: rotate(13deg);
 	    transform: rotate(13deg);
