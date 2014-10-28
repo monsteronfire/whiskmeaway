@@ -462,7 +462,7 @@ header {
 		border-radius: rem-calc(0) rem-calc(0) rem-calc(3) rem-calc(3);
 
 		h3 {
-			height: rem-calc(76);
+			height: rem-calc(60);
 		}
 
 		@include desktop {
@@ -517,6 +517,42 @@ header {
 			transition: all .6s ease;
 		}
 	}
+
+	.description .price-bar {
+		position: absolute;
+		right: rem-calc(0);
+		bottom: rem-calc(0);
+		left: rem-calc(0);
+		background-color: $mediumred;
+		transition: background-color .3s ease .1s;
+		text-align: center;
+
+		@include desktop {
+			background-color: $lightgrey;
+		}
+
+		p {
+			color: $mediumgrey;
+			font-family: 'roboto_slabbold';
+			font-size: rem-calc(13);
+			margin-top: rem-calc(10);
+			margin-bottom: rem-calc(10);
+
+			@include desktop {
+				color: $mediumred;
+			}
+
+			.price {
+				color: $offwhite;
+				margin-left: rem-calc(5);
+
+				@include desktop {
+					color: $mediumgrey;
+				}
+			}
+		}
+
+	}
 }
 
 .product-item:hover {
@@ -548,6 +584,24 @@ header {
 			-ms-transition-delay: .225s; 
 			transition-delay: .225s;
 			opacity: 1;
+		}
+	}
+
+	.description .price-bar {
+		@include desktop {
+			background-color: $mediumred;
+		}
+
+		p {
+			@include desktop {
+				color: $mediumgrey;
+			}
+
+			.price {
+				@include desktop {
+					color: $offwhite;
+				}
+			}
 		}
 	}
 }
