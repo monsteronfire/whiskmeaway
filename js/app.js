@@ -40,9 +40,8 @@ jQuery(document).ready(function(){
 	});
 
 	//Snowfall
-        $(document).snowfall({
+        $('#site-wrapper').snowfall({
         	collection : '.collectonme',
-        	deviceorientation : true,
         	round : true,
         	flakeCount : 20,
         	minSize: 2,

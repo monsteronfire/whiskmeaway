@@ -1,4 +1,11 @@
 /* GLOBAL */
+html, body {
+	/*width: 100%;
+	height: 100%;
+	position: relative;
+	max-width: 320px;
+	overflow-x: hidden;*/
+}
 
 body {
 	background-color: $bggrey;
@@ -92,7 +99,7 @@ header {
 }
 
 .site-title {
-	width: rem-calc(205);
+	width: rem-calc(201);
 	margin: 0 auto;
 	line-height: rem-calc(30);
 
@@ -153,7 +160,7 @@ header {
 .site-wrapper {
 	position: relative;
 	min-width: 320px;
-	overflow-x: hidden
+	overflow: hidden;
 }
 
 .main-content {
@@ -161,7 +168,11 @@ header {
 }
 
 .main-content section {
-	padding-top: rem-calc(80);
+	padding-top: rem-calc(30);
+
+	@include desktop {
+		padding-top: rem-calc(80);
+	}
 }
 
 .main-content .bg-gradient section {
@@ -169,6 +180,8 @@ header {
 }
 
 .main-content h2 {
+	padding-left: rem-calc(22);
+
 	@include tablet {
 		display: inline-block;
 		vertical-align: top;
@@ -180,22 +193,28 @@ header {
 		display: inline-block;
 		vertical-align: top;
 		margin-top: rem-calc(10);
+		font-size: rem-calc(35);
 	}
 }
 
 .section-intro {
+	font-size: rem-calc(13);
+	padding-left: rem-calc(22);
+	padding-right: rem-calc(22);
+
 	@include tablet {
 		display: inline-block;
+		padding-top: rem-calc(5);
 		padding-left: rem-calc(20);
 		border-left: rem-calc(1) solid $mediumgrey;
-		font-size: rem-calc(13);
+		font-size: rem-calc(14);
 	}
 
 	@include desktop {
 		display: inline-block;
 		padding-left: rem-calc(20);
 		border-left: rem-calc(1) solid $mediumgrey;
-		font-size: rem-calc(13);
+		font-size: rem-calc(18);
 	}
 }
 
@@ -206,7 +225,13 @@ header {
 	}
 
 	@include desktop {
-		width: 12%;
+		width: 16%;
+	}
+}
+
+.gifts h2 {
+	@include tablet {
+		padding-top: rem-calc(10);
 	}
 }
 
@@ -214,6 +239,7 @@ header {
 .gifts .section-intro {
 	@include tablet {
 		width: 70%;
+		padding-top: rem-calc(0);
 	}
 
 	@include desktop {
@@ -223,11 +249,11 @@ header {
 
 .whole-cakes h2 {
 	@include tablet {
-		width: 18%;
+		width: 21%;
 	}
 
 	@include desktop {
-		width: 20%;
+		width: 28%;
 	}
 }
 
@@ -237,13 +263,13 @@ header {
 	}
 
 	@include desktop {
-		width: 60%;
+		width: 63%;
 	}
 }
 
 .traditional-christmas-breads h2 {
 	@include tablet {
-		width: 43%;
+		width: 30%;
 	}
 
 	@include desktop {
@@ -436,7 +462,7 @@ header {
 .product-item {
 	position: relative;
 	width: rem-calc(240);
-	height: rem-calc(420);
+	height: rem-calc(423);
 	border-radius: rem-calc(3);
 	overflow: hidden;
 	text-align: center;
@@ -460,7 +486,7 @@ header {
 		padding-left: rem-calc(10);
 		background-color: $white;
 		transition: all .3s ease .1s;
-		border-radius: rem-calc(0) rem-calc(0) rem-calc(3) rem-calc(3);
+		border-radius: rem-calc(0) rem-calc(0) rem-calc(4) rem-calc(4);
 
 		h3 {
 			height: rem-calc(60);
@@ -487,7 +513,7 @@ header {
 
 	    @include desktop {
 	    	position: absolute;
-			top: rem-calc(-60);
+			top: rem-calc(-58);
 			z-index: -1;
 			border-style: solid;
 			/* border-width: top right bottom left  */
@@ -525,6 +551,7 @@ header {
 		bottom: rem-calc(0);
 		left: rem-calc(0);
 		background-color: $mediumred;
+		border-radius: rem-calc(0) rem-calc(0) rem-calc(4) rem-calc(4);
 		transition: background-color .3s ease .1s;
 		text-align: center;
 

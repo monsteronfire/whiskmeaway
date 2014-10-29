@@ -25,7 +25,6 @@ jQuery(document).ready(function(){
 	//Snowfall
         $('#site-wrapper').snowfall({
         	collection : '.collectonme',
-        	deviceorientation : true,
         	round : true,
         	flakeCount : 20,
         	minSize: 2,

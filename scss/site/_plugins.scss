@@ -174,19 +174,23 @@
 
 .slick-dots {
     position: absolute;
-    bottom: -16px;
+    bottom: -17px;
     list-style: none;
     display: block;
     text-align: center;
     padding: 0;
     width: 100%;
+
+    @include desktop {
+        bottom: -5px;
+    }
 }
 
 .slick-dots li {
     position: relative;
     display: inline-block;
     height: 20px;
-    width: 10px;
+    width: 15px;
     margin: 0px;
     padding: 0;
     cursor: pointer;
@@ -222,7 +226,7 @@
     width: 20px;
     height: 20px;
     font-family: "slick";
-    font-size: 20px;
+    font-size: 30px;
     line-height: 20px;
     text-align: center;
     color: black;
