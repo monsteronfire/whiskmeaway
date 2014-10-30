@@ -40,6 +40,10 @@ body {
 	@include desktop {
 		display: none;
 	}
+
+	@include banner1280 {
+		display: none;
+	}
 }
 
 .show-medium-only {
@@ -52,6 +56,26 @@ body {
 	@include desktop {
 		display: none;
 	}
+
+	@include banner1280 {
+		display: none;
+	}
+}
+
+.show-banner1280-only {
+	display: none;
+
+	@include tablet {
+		display: none;
+	}
+
+	@include desktop {
+		display: none;
+	}
+
+	@include banner1280 {
+		display: block;
+	}
 }
 
 .show-large-only {
@@ -63,6 +87,10 @@ body {
 
 	@include desktop {
 		display: block;
+	}
+
+	@include banner1280 {
+		display: none;
 	}
 }
 
@@ -329,7 +357,7 @@ header {
 	}
 
 	@include desktop {
-		width: 60%;
+		width: 63%;
 	}
 }
 
