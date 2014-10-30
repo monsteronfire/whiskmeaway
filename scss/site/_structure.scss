@@ -358,6 +358,8 @@ header {
 
 	@include desktop {
 		width: 63%;
+		padding-top: rem-calc(20);
+		padding-bottom: rem-calc(20);
 	}
 }
 

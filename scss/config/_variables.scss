@@ -12,6 +12,7 @@ $os-font-path: "../fonts/opensans/" !default;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $banner1280: 1280px;
+$banner1280max: 1380px;
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
@@ -26,7 +27,7 @@ $banner1280: 1280px;
 }
 
 @mixin banner1280 {
-	@media (min-width: #{$desktop-width}) and (max-width: #{$banner1280 - 1px}) {
+	@media (min-width: #{$desktop-width}) and (max-width: #{$banner1280max - 1px}) {
 		@content;
 	}
 }
